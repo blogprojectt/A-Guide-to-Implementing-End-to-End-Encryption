@@ -25,7 +25,17 @@
     <li style="font-family:arial;">Steps on how to Implement End-to-End Encryption</li>
   </ul>
   <li style="font-family:arial;">What are Real-life Examples of End-to-End Encryption Use?</li>
+  <ul>
+    <li style="font-family:arial;">Communicaton</li>
+    <li style="font-family:arial;">Finance</li>
+    <li style="font-family:arial;">File Storage</li>
+    <li style="font-family:arial;">Health Care</li>
+  </ul>
   <li style="font-family:arial;">Advantages and Limitations of End-to-End Encryption</li>
+    <ul>
+    <li style="font-family:arial;">Advantages of End-to-End Encryption</li>
+    <li style="font-family:arial;"></li>
+  </ul>
   <li style="font-family:arial;">Conclusion</li>
 </ul>
 
@@ -49,5 +59,52 @@ By encrypting data or transforming it into an unreadable data, the user is prote
    <p style="font-family:arial; font-size: 12;">Refer to the image below for a visualization of how end-to-end encryption works. It starts with the data from the sender. Then, this data is encrypted using the public key of the receiver. After the data is encrypted it can be safely transmitted to the network or ISPs. When the receiver gets the message, it will need to use its private key to decrypt the message. Only after then will the receiver be able to read the message of the sender.</p>
 
   <img src="A-Guide-to-Implementing-End-to-End-Encryption/user.png">
+ <h2 style="font-family:arial;">Step-by-Step Guide to Implementing End-to-End Encryption</h2> 
+  <h3 style="font-family:arial;">Definition of terms</h3>
+   <p style="font-family:arial; font-size: 12;">The implementation of End-to-End Encryption requires understanding of the following terms so a brief definition is provided correspondingly: </p>
+  <p style="font-family:arial; font-size: 12;">Encryption Protocol - These are the protocols wherein encryption algorithms are subject to. There are various types of encryption protocols with corresponding functions like TLS/SSL for communications or use of SSH for remote connections to computers.</p>
+  <p style="font-family:arial; font-size: 12;">Public and Private keys - Public and private keys are used in pairs for end-to-end encryption. The public key is openly available to all system users, while the private key remains securely confined to the user's device, serving as the exclusive means for decrypting data. </p>
+  <p style="font-family:arial; font-size: 12;">Asymmetric Encryption - This is the type of encryption used when implementing end-to-end encryption. In this encryption a combination of public key and private key is used to ensure that the data is transmitted without any interceptions.
+ </p>
+  <h3 style="font-family:arial;">Steps on how to Implement End-to-End Encryption</h3>
+  <p style="font-family:arial; font-size: 12;">Here are the steps than you need to follow to implement end-to-end encryption:</p>
+  <p style="font-family:arial; font-size: 12;">Choose an Appropriate Encryption Protocol: Decide on the encryption protocol that best fits your requirements. Options include AES, RSA, or PGP.</p>
+  <p style="font-family:arial; font-size: 12;">Generate Public and Private Keys: Every device or user participating in the communication process generates a unique pair of public and private keys. Keep the private key secure and share the public key. </p>
+  <p style="font-family:arial; font-size: 12;">Obtain Public Keys: Devices or users involved on both ends of communication must exchange their public keys with one another. This exchange enables encryption of messages meant for specific recipients.</p>
+  <p style="font-family:arial; font-size: 12;">Encrypt the data: Using the obtained recipient's public key, encrypt the messages or data before transmission. This ensures that only the intended recipient with the said public key is only the one who can decipher the content.</p>
+  <p style="font-family:arial; font-size: 12;">Decrypt the data - Using the private key of the recipient, the data can now be deciphered.</p>
+  <p style="font-family:arial; font-size: 12;">Integrity Check (Optional): Consider including an integrity check to verify that the message content remains unaltered during transit. This step enhances security.
+</p>
+  <p style="font-family:arial; font-size: 12;">Use Secure Communication Channels: Employ secure communication channels like HTTPS, SSL/TLS, or a virtual private network to further safeguard the transmission of encrypted data. </p>
+  <p style="font-family:arial; font-size: 12;">Implement Security Best Practices: Complement end-to-end encryption with other security measures such as two-factor authentication, robust password policies, and regular software updates. These additional layers of security bolster overall protection.</p>
+<h2 style="font-family:arial;">/h2>
+  <h3 style="font-family:arial;">Communication</h3>
+   <p style="font-family:arial; font-size: 12;">messaging applications like Messenger, WhatsApp, etc., use or have a feature that uses end-to-end encryption. With this, when a user sends a message it can not be intercepted. However, it is important to note that most channels of communications do not automatically enable end-to-end encryption. In this case, data shared in your conversation are susceptible to being intercepted by malicious entities. </p>
+  <h3 style="font-family:arial;">FInance: </h3>
+    <p style="font-family:arial; font-size: 12;">Online banking either through a website or an app uses end-to-end encryption. Therefore, all the data you send and receive such as your bank balance, expenses, and other transactions are not visible to any other person or entities. This is necessary as financial transactions primarily involve sensitive information.
+</p>
+    <p style="font-family:arial; font-size: 12;">Online Shopping: Almost everyone shops online nowadays and this means sensitive data like your bank information, address, contact number, etc. are shared through these platforms. The use of end-to-end encryption is crucial in ensuring that none of these get leaked to hackers and other entities.
+</p>
+  <h3 style="font-family:arial;">File storage: </h3>
+   <p style="font-family:arial; font-size: 12;">Most of our files are uploaded in the cloud be it through iCloud Drive, Google Drive, Dropbox, etc.,and all of these need to be stored with confidentiality. Thus, end-to-end encryption is used so that every time you upload or download a file from the cloud, you can be free of worry that it will be intercepted or reproduced without your consent.</p>
+  <h3 style="font-family:arial;">Healthcare: </h3>
+   <p style="font-family:arial; font-size: 12;">Nowadays, there are healthcare transactions carried out online as the use of telemedicine becomes more popular. A patient’s information and all of the records stored by healthcare providers is sensitive and should not be accessible by other entities. Thus, end-to-end encryption is used in transactions that involves any of these sensitive data or records.</p>
+
+  <h2 style="font-family:arial;">Advantages and Limitations of End-to-End Encryption</h2> 
+  <h3 style="font-family:arial;">Advantages of End-to-End Encryption</h3>
+  <p style="font-family:arial; font-size: 12;">The most obvious advantage of using end-to-end encryption is the heightened security that it provides to your privacy. By ensuring that only intended recipients get access to your information, you can be assured that your privacy is not compromised. This leads to the possibility of exchanging sensitive information online. Online banking, shopping would not have been possible if end-to-end encryption was not discovered and popularized. We can only confidently transact online using our real life money because we know that our information is protected by some digital security. End-to-end encryption is the backbone of the security in most of these online transactions.</p>
+  <p style="font-family:arial; font-size: 12;">Aside from the data that we share, the data that we access is also protected by end-to-end encryption. There are instances where we receive and download information, files, and other data from other users. If these are sensitive information, we must ensure that it is not altered or tampered with during the communication process. Therefore, use of end-to-end encryption is also necessary for maintaining the integrity of data.
+</p>
+  <p style="font-family:arial; font-size: 12;">Finally, possibly the most important use of end-to-end encryption is to avoid massive cyber attacks. If sensitive data is breached as it is highly possible without using end-to-end encryption, then hackers and other malicious actors could penetrate the system of a company per say and this could lead to damage of information and other ways of compromising users’ safety and privacy.
+</p>
+  <h3 style="font-family:arial;">Limitations and Risks of End to End Encryption.</h3>
+  <p style="font-family:arial; font-size: 12;">The use of end-to-end transactions can be complicated as there is softwares and algorithms involved.It can delay processes or make it more challenging especially when processes involve accessing the encrypted data. This is primarily concerning for law enforcement agencies, even they can not access any data that is encrypted unless they are the intended recipient. Thus, in obtaining and analyzing evidence, an end-to-end encryption sort of blocks their way. Additionally, it requires secure handling of the encryption keys because if these are lost then it will be impossible to retrieve the data encrypted.</p>
+  <p style="font-family:arial; font-size: 12;">Moreover, even if end-to-end encryption secures transactions, it does not completely guarantee your protection. Since end-to-end encryption only encrypts the data up until it is decrypted by the receiver, then any problems on the receiving end still poses danger to the security of your data. Therefore, it is still important to ensure the reliability of both ends. </p>
+
+ <h2 style="font-family:arial;">Conclusion</h2> 
+  <p style="font-family:arial; font-size: 12;">The discovery of end-to-end encryption is one of the most significant breakthroughs in cyber security. It allows safer communication by ensuring that during transactions using an end-to-end encryption, the shared information will not be accessible and can not be intercepted by other parties. Providing this kind of security made most of the significant online transactions possible. Our lives are now made easier as we can do online communication, online banking, online shopping, storing of files in the cloud, and even seeking professional healthcare help online. We can only do all of these because end-to-end encryption is implemented for these transactions. It is also possible to implement end-to-end encryption by yourself. A general set of instructions have been provided as your guide on how you can do this. 
+</p>
+  <p style="font-family:arial; font-size: 12;">Implementing end-to-end encryption can provide you with security, specifically in ensuring that your data is protected from end-to-end of transactions. However, using end-to-end encryption does not guarantee that your privacy will not be compromised as it is still subject to limitations. Therefore, end-to-end encryption must be used in conjunction with cyber security practices to ensure that your privacy will not be compromised.
+</p>
 </body>
 </html>
