@@ -80,31 +80,39 @@ By encrypting data or transforming it into an unreadable data, the user is prote
   <h3 style="font-family:arial;">Steps on how to Implement End-to-End Encryption</h3>
 
   <p style="font-family:arial; font-size: 12;">Here are the steps than you need to follow to implement end-to-end encryption:</p>
-  <p style="font-family:arial; font-size: 12;">Choose an Appropriate Encryption Protocol: Decide on the encryption protocol that best fits your requirements. Options include AES, RSA, or PGP.</p>
-  <p style="font-family:arial; font-size: 12;">Generate Public and Private Keys: Every device or user participating in the communication process generates a unique pair of public and private keys. Keep the private key secure and share the public key. </p>
-  <p style="font-family:arial; font-size: 12;">Obtain Public Keys: Devices or users involved on both ends of communication must exchange their public keys with one another. This exchange enables encryption of messages meant for specific recipients.</p>
-  <p style="font-family:arial; font-size: 12;">Encrypt the data: Using the obtained recipient's public key, encrypt the messages or data before transmission. This ensures that only the intended recipient with the said public key is only the one who can decipher the content.</p>
-  <p style="font-family:arial; font-size: 12;">Decrypt the data - Using the private key of the recipient, the data can now be deciphered.</p>
-  <p style="font-family:arial; font-size: 12;">Integrity Check (Optional): Consider including an integrity check to verify that the message content remains unaltered during transit. This step enhances security.
-</p>
-  <p style="font-family:arial; font-size: 12;">Use Secure Communication Channels: Employ secure communication channels like HTTPS, SSL/TLS, or a virtual private network to further safeguard the transmission of encrypted data. </p>
-  <p style="font-family:arial; font-size: 12;">Implement Security Best Practices: Complement end-to-end encryption with other security measures such as two-factor authentication, robust password policies, and regular software updates. These additional layers of security bolster overall protection.</p>
-<br/>
+  <ol>
+    <li style="font-family:arial;">Choose an Appropriate Encryption Protocol: Decide on the encryption protocol that best fits your requirements. Options include AES, RSA, or PGP.</li> 
+    <li style="font-family:arial;">Generate Public and Private Keys: Every device or user participating in the communication process generates a unique pair of public and private keys. Keep the private key secure and share the public key.</li> 
+    <li style="font-family:arial;">Obtain Public Keys: Devices or users involved on both ends of communication must exchange their public keys with one another. This exchange enables encryption of messages meant for specific recipients.
+</li> 
+    <li style="font-family:arial;">Encrypt the data: Using the obtained recipient's public key, encrypt the messages or data before transmission. This ensures that only the intended recipient with the said public key is only the one who can decipher the content.
+</li> 
+    <li style="font-family:arial;">Decrypt the data - Using the private key of the recipient, the data can now be deciphered.
+</li> 
+    <li style="font-family:arial;">Integrity Check (Optional): Consider including an integrity check to verify that the message content remains unaltered during transit. This step enhances security.
+</li> 
+    <li style="font-family:arial;">Use Secure Communication Channels: Employ secure communication channels like HTTPS, SSL/TLS, or a virtual private network to further safeguard the transmission of encrypted data.
+</li> 
+    <li style="font-family:arial;">Implement Security Best Practices: Complement end-to-end encryption with other security measures such as two-factor authentication, robust password policies, and regular software updates. These additional layers of security bolster overall protection.
+</li> 
+  </ol>
+  
+  <br/>
   <h2 style="font-family:arial;">Real-life use of end to end encryption</h2>
   <hr>
   <h3 style="font-family:arial;">Communication</h3>
  
    <p style="font-family:arial; font-size: 12;">messaging applications like Messenger, WhatsApp, etc., use or have a feature that uses end-to-end encryption. With this, when a user sends a message it can not be intercepted. However, it is important to note that most channels of communications do not automatically enable end-to-end encryption. In this case, data shared in your conversation are susceptible to being intercepted by malicious entities. </p>
-  <h3 style="font-family:arial;">Finance: </h3>
+  <h3 style="font-family:arial;">Finance</h3>
 
     <p style="font-family:arial; font-size: 12;">Online banking either through a website or an app uses end-to-end encryption. Therefore, all the data you send and receive such as your bank balance, expenses, and other transactions are not visible to any other person or entities. This is necessary as financial transactions primarily involve sensitive information.
 </p>
     <p style="font-family:arial; font-size: 12;">Online Shopping: Almost everyone shops online nowadays and this means sensitive data like your bank information, address, contact number, etc. are shared through these platforms. The use of end-to-end encryption is crucial in ensuring that none of these get leaked to hackers and other entities.
 </p>
-  <h3 style="font-family:arial;">File storage: </h3>
+  <h3 style="font-family:arial;">File storage</h3>
 
    <p style="font-family:arial; font-size: 12;">Most of our files are uploaded in the cloud be it through iCloud Drive, Google Drive, Dropbox, etc.,and all of these need to be stored with confidentiality. Thus, end-to-end encryption is used so that every time you upload or download a file from the cloud, you can be free of worry that it will be intercepted or reproduced without your consent.</p>
-  <h3 style="font-family:arial;">Healthcare: </h3>
+  <h3 style="font-family:arial;">Healthcare</h3>
  
    <p style="font-family:arial; font-size: 12;">Nowadays, there are healthcare transactions carried out online as the use of telemedicine becomes more popular. A patient’s information and all of the records stored by healthcare providers is sensitive and should not be accessible by other entities. Thus, end-to-end encryption is used in transactions that involves any of these sensitive data or records.</p>
 <br/>
@@ -117,7 +125,7 @@ By encrypting data or transforming it into an unreadable data, the user is prote
 </p>
   <p style="font-family:arial; font-size: 12;">Finally, possibly the most important use of end-to-end encryption is to avoid massive cyber attacks. If sensitive data is breached as it is highly possible without using end-to-end encryption, then hackers and other malicious actors could penetrate the system of a company per say and this could lead to damage of information and other ways of compromising users’ safety and privacy.
 </p>
-  <h3 style="font-family:arial;">Limitations and Risks of End to End Encryption.</h3>
+  <h3 style="font-family:arial;">Limitations and Risks of End to End Encryption</h3>
 
   <p style="font-family:arial; font-size: 12;">The use of end-to-end transactions can be complicated as there is softwares and algorithms involved.It can delay processes or make it more challenging especially when processes involve accessing the encrypted data. This is primarily concerning for law enforcement agencies, even they can not access any data that is encrypted unless they are the intended recipient. Thus, in obtaining and analyzing evidence, an end-to-end encryption sort of blocks their way. Additionally, it requires secure handling of the encryption keys because if these are lost then it will be impossible to retrieve the data encrypted.</p>
   <p style="font-family:arial; font-size: 12;">Moreover, even if end-to-end encryption secures transactions, it does not completely guarantee your protection. Since end-to-end encryption only encrypts the data up until it is decrypted by the receiver, then any problems on the receiving end still poses danger to the security of your data. Therefore, it is still important to ensure the reliability of both ends. </p>
